@@ -23,7 +23,7 @@ spec:                     # This is the specification where we can even put the 
        kubernetes.io/hostname: kubeworker1
       containers:
       - name: kafka-broker-2       # Used by DNS
-        image: 129.114.25.102:5000/kafka-dockerfile
+        image: 129.114.25.102:5000/kafka-image
         ports: 
          - containerPort: 9092
         imagePullPolicy: IfNotPresent
