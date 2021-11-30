@@ -30,6 +30,6 @@ spec:                     # This is the specification where we can even put the 
         #command: ["tail"]
         #args: ["-f", "/dev/null"]
         command: ["/opt/bitnami/kafka/bin/kafka-server-start.sh"]
-        args: ["/opt/bitnami/config/server.properties", "--override", "brokerid=1", "--override", "listeners=PLAINTEXT://:9092", "--override", "advertised.listeners=PLAINTEXT://129.114.25.102:30002", "--override", "listeners.security.protocol.map=PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL", "--override", "zookeeper.connect=zookeeper-svc:2181"]
+        args: ["/opt/bitnami/kafka/config/server.properties", "--override", "brokerid=1", "--override", "listeners=PLAINTEXT://:9092", "--override", "advertised.listeners=PLAINTEXT://129.114.25.102:30002", "--override", "listeners.security.protocol.map=PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL", "--override", "zookeeper.connect=zookeeper-svc:2181"]
  
 ...
