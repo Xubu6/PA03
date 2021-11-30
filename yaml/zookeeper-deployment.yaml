@@ -27,9 +27,9 @@ spec:                     # This is the specification where we can even put the 
         ports: 
         - containerPort: 2181
         imagePullPolicy: IfNotPresent
-        command: ["tail"]
-        args: ["-f", "/dev/null"]
-        #command: ["/opt/bitnami/kafka/bin/zookeeper-server-start.sh"]
-        #args: ["/opt/bitnami/kafka/config/zookeeper.properties"]
+        #command: ["tail"]
+        #args: ["-f", "/dev/null"]
+        command: ["/opt/bitnami/kafka/bin/zookeeper-server-start.sh"]
+        args: ["/opt/bitnami/kafka/config/zookeeper.properties"]
  
 ...
