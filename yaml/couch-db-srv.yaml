@@ -18,7 +18,7 @@ spec:
   ports:
     - name: couch-db-port    # not needed, but I have added this
       protocol: TCP     # this is default (so not needed either)
-      port: 5556   # the port used by the server inside the pod/container
-      targetPort: 5556   # not sure if we need this because if not specified, it is same as port
+      port: 5984   # the port used by the server inside the pod/container
+      targetPort: 5984   # not sure if we need this because if not specified, it is same as port
       nodePort: 30003  # this is what will be externally published
 ...
