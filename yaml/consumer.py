@@ -15,7 +15,7 @@ import os   # need this for popen
 import time # for sleep
 from kafka import KafkaConsumer  # consumer of events
 from json import loads
-# import couchdb
+import couchdb
 import json
 
 # We can make this more sophisticated/elegant but for now it is just
