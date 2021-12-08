@@ -31,7 +31,7 @@ consumer = KafkaConsumer (
 consumer.subscribe (topics=["utilizations"])
 
 user = "admin"
-password = "team16"
+password = "16"
 couchserver = couchdb.Server("http://%s:%s@129.114.24.223:5984/" % (user, password))
 dbname = "topicdata"
 if dbname in couchserver:
