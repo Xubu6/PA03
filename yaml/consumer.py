@@ -24,7 +24,7 @@ import json
 # acquire the consumer
 # (you will need to change this to your bootstrap server's IP addr)
 consumer = KafkaConsumer (
-		bootstrap_servers="localhost:9092",
+		bootstrap_servers="129.114.25.102:9092",
 		value_deserializer=lambda x: loads(x.decode('utf-8')))
 
 # subscribe to topic
