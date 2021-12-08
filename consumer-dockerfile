@@ -6,18 +6,21 @@ FROM ubuntu:latest
 RUN apt-get -y update && apt-get install -y net-tools python3 gcc
 RUN apt-get install -y python3-dev python3-pip
 RUN python3 -m pip install --upgrade pip
-RUN pip3 install --upgrade numpy
-RUN apt update
 RUN pip install kafka-python
-RUN curl -L https://couchdb.apache.org/repo/bintray-pubkey.asc | sudo apt-key add -
-RUN echo "deb https://apache.bintray.com/couchdb-deb focal main" | sudo tee -a /etc/apt/sources.list
-RUN sudo apt update
-RUN sudo apt install couchdb
+RUN pip install CouchDB
+
+#RUN pip3 install --upgrade numpy
+#RUN apt update
+#RUN pip install kafka-python
+#RUN curl -L https://couchdb.apache.org/repo/bintray-pubkey.asc | sudo apt-key add -
+#RUN echo "deb https://apache.bintray.com/couchdb-deb focal main" | sudo tee -a /etc/apt/sources.list
+#RUN sudo apt update
+#RUN sudo apt install couchdb
 
 
 COPY *.py /
 
-COPY ./consumer.py .
+#COPY ./consumer.py .
 
 
 
